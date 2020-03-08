@@ -13,3 +13,8 @@ script:
   - make test
   - make docker_build
   - make docker_push
+
+deploy:
+  provider: heroku
+  app: blooming-meadow-30273
+  api_key: ${HEROKU_API_KEY}
