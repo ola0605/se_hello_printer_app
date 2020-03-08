@@ -102,3 +102,8 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 # Materiały
 
 - https://virtualenvwrapper.readthedocs.io/en/latest/
+
+
+https://app.statuscake.com/button/index.php?Track=mIHZbWpBLX&Days=1&Design=1
+
+https://travis-ci.com/ola0605/se_hello_printer_app.svg?branch=master
