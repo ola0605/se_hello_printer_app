@@ -16,4 +16,7 @@ docker:
   stage: docker_build
   script:
   -  apk add --update make
-  -  make docker_build
+  -  docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+  -  docker build -t registry.gitlab.com/ola0605/se_hello_printer_app .
+  -  docker push registry.gitlab.com/ola0605/se_hello_printer_app
+  -  #make docker_build
