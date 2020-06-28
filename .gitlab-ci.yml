@@ -1,0 +1,19 @@
+
+stages:
+- test
+- docker_build
+
+test:
+  image: "python:3"
+  stage: test
+  script:
+  - make deps
+  - make test
+docker:
+  image: docker:stable
+  services:
+  - docker:dind
+  stage: docker_build
+  script:
+  -  apk add --update make
+  -  make docker_build
